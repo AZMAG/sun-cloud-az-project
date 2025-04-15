@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Endpoints on Customer-Api</title>
+    <link>/endpoints.html</link>
+    <description>Recent content in Endpoints on Customer-Api</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/endpoints/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Authentication</title>
+      <link>/endpoints/auth.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/endpoints/auth.html</guid>
+      <description>The authentication endpoints are used to authenticate against the API. If you have been given an access-token you can use that instead.
+Endpoints  /user/login /user/logout  /user/login     User authentication     URL /user/login   Method POST   Content type application/json   Body/Data {&amp;quot;username&amp;quot;: &amp;quot;your username&amp;quot;, &amp;quot;password&amp;quot;: &amp;quot;your password&amp;quot;}   Success response HTTP Status 200
+Content-Type: application/json
+Content: {&amp;quot;display_name&amp;quot;:&amp;quot;your name&amp;quot;}   Error response HTTP Status 401: Invalid credentials   Sample call curl https://gui.</description>
+    </item>
+    
+    <item>
+      <title>Data Bundle Permissions</title>
+      <link>/endpoints/data-bundles.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/endpoints/data-bundles.html</guid>
+      <description>The data bundles endpoint is used to fetch data bundles, referred as bundle_name in the API documentation, which you have access to.
+It will also describe if there are any restrictions in time or regions that you have access to.
+To get more details about each bundle_name read about it here
+Endpoints  /user/data-bundles  user/data-bundles     Data Bundles Permissions     URL /user/data-bundles   Method GET   Success response HTTP Status 200</description>
+    </item>
+    
+    <item>
+      <title>Here-Tile Offset</title>
+      <link>/endpoints/here-tile-offset.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/endpoints/here-tile-offset.html</guid>
+      <description>The structure of Here-Tile offset uses the concept of offset and the structure of data is similar to Here-Tile sublink. This means that in order to identify the location of a data point, the data is correlated with a road id and an offset from that road&amp;rsquo;s start position. To calculate the segment (if both start and end offset are used) or the point, calculate the position of the offset by following the road geometry.</description>
+    </item>
+    
+    <item>
+      <title>Here-Tile Sublink</title>
+      <link>/endpoints/here-tile-sublink.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/endpoints/here-tile-sublink.html</guid>
+      <description>The Here-Tile sublink API divides the road network into sublinks. A sublink is a road (called link in this case) that has been split into one or more subsegments. The maximum length of a sublink depends on the data-bundle. The length of a sublink decides the highest resolution the data will be supplied at. Each road is divided into sublinks of equal length.
+This API also separates the data from the underlying road network geometry.</description>
+    </item>
+    
+    <item>
+      <title>Mapbox Vector Tile</title>
+      <link>/endpoints/mapbox-vector-tile.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/endpoints/mapbox-vector-tile.html</guid>
+      <description>The Mapbox vector tile API is an easy-to-use format as it is supported by many rendering libraries. It contains both the geometry and the data. This API is suitable for graphical interfaces but not for data scraping as it always downloads the geometry of the road segments.
+Endpoints  /tiles/vector/example /tiles/vector/aggregated /obstacles/vector/obstacle-aggregation  /tiles/vector/example     Mapbox vector tile example     URL /tiles/vector/example/:level/:column/:row   Method GET   Description This vector tile layer displays a layer that requires no authentication or permission to use.</description>
+    </item>
+    
+  </channel>
+</rss>

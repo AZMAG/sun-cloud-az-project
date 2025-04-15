@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Customer-Api</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2022-05-18T14:27:04 UTC">
+<title>Code Examples :: Customer-Api</title>
+<link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon" />
+<link href="../css/font-awesome.min.css" rel="stylesheet">
+<link href="../css/nucleus.css" rel="stylesheet">
+<link href="../theme-flex/style.css" rel="stylesheet">
+
+	<link href="../theme-flex/variant-nira.css" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<script src="../js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "";
+</script>
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="../general/code.html">
+    
+      <header>
+  <div class="logo">
+     
+<span id="header" style="font-size: larger">
+  <a id="logo" href="">
+    <img src="../images/white_logo_0.png" alt="NIRA Dynamics" />
+  </a>
+</span>
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+    <li data-nav-id="/general.html" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="../general.html">General</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/general/tile-documentation.html" class="dd-item">
+        <div>
+          <a href="../general/tile-documentation.html">
+            Tile Concept Explained
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/general/authentication.html" class="dd-item">
+        <div>
+          <a href="../general/authentication.html">
+            Authentication
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/general/data-bundles.html" class="dd-item">
+        <div>
+          <a href="../general/data-bundles.html">
+            Data Bundles
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/general/protobuf-documentation.html" class="dd-item">
+        <div>
+          <a href="../general/protobuf-documentation.html">
+            Google Protocol Buffer Explained
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/general/api-testing.html" class="dd-item">
+        <div>
+          <a href="../general/api-testing.html">
+            Test the API
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/general/code.html" class="dd-item active">
+        <div>
+          <a href="../general/code.html">
+            Code Examples
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/endpoints.html" class="dd-item haschildren
+        ">
+      <div>
+      <a href="../endpoints.html">Endpoints</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/endpoints/auth.html" class="dd-item">
+        <div>
+          <a href="../endpoints/auth.html">
+            Authentication
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/endpoints/data-bundles.html" class="dd-item">
+        <div>
+          <a href="../endpoints/data-bundles.html">
+            Data Bundle Permissions
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/endpoints/here-tile-offset.html" class="dd-item">
+        <div>
+          <a href="../endpoints/here-tile-offset.html">
+            Here-Tile Offset
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/endpoints/here-tile-sublink.html" class="dd-item">
+        <div>
+          <a href="../endpoints/here-tile-sublink.html">
+            Here-Tile Sublink
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/endpoints/mapbox-vector-tile.html" class="dd-item">
+        <div>
+          <a href="../endpoints/mapbox-vector-tile.html">
+            Mapbox Vector Tile
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/general.html" >
+   General</option> 
+      <option value="/general/tile-documentation.html" >- Tile Concept Explained</option>
+      <option value="/general/authentication.html" >- Authentication</option>
+      <option value="/general/data-bundles.html" >- Data Bundles</option>
+      <option value="/general/protobuf-documentation.html" >- Google Protocol Buffer Explained</option>
+      <option value="/general/api-testing.html" >- Test the API</option>
+      <option value="/general/code.html"  selected>- Code Examples</option>
+  
+    <option value="/endpoints.html" >
+   Endpoints</option>
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+        <script type="text/javascript" src="../js/lunr.min.js"></script>
+        <script type="text/javascript" src="../js/auto-complete.js"></script>
+        <link href="../css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+              var baseurl = "";
+          
+        </script>
+        <script type="text/javascript" src="../js/search.js"></script>
+      </div>
+    
+
+    <h1>Code Examples</h1>
+    
+    
+    
+    
+
+<h2 id="code-examples">Code Examples</h2>
+
+<p>Below are some code examples to do specific operations related to the API.</p>
+
+<h3 id="computing-tile-id">Computing Tile Id</h3>
+
+<h4 id="scala">Scala</h4>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala"><span style="color:#00a8c8">val</span> <span style="color:#75af00">LonRange</span> <span style="color:#00a8c8">=</span> <span style="color:#ae81ff">360</span>
+<span style="color:#00a8c8">val</span> <span style="color:#75af00">LatRange</span> <span style="color:#00a8c8">=</span> <span style="color:#ae81ff">180</span>
+
+<span style="color:#00a8c8">def</span> <span style="color:#111">getTileId</span><span style="color:#f92672">(</span><span style="color:#111">lat</span><span style="color:#00a8c8">:</span> <span style="color:#00a8c8">Double</span><span style="color:#f92672">,</span> <span style="color:#111">lon</span><span style="color:#00a8c8">:</span> <span style="color:#00a8c8">Double</span><span style="color:#f92672">,</span> <span style="color:#111">zoomLevel</span><span style="color:#00a8c8">:</span> <span style="color:#00a8c8">Int</span><span style="color:#f92672">)</span><span style="color:#00a8c8">:</span> <span style="color:#00a8c8">Long</span> <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>
+  <span style="color:#75715e">// find x,y tile indexes
+</span><span style="color:#75715e"></span>  <span style="color:#00a8c8">val</span> <span style="color:#111">x</span><span style="color:#00a8c8">:</span> <span style="color:#00a8c8">Int</span> <span style="color:#f92672">=</span> <span style="color:#111">scala</span><span style="color:#f92672">.</span><span style="color:#111">math</span>
+    <span style="color:#f92672">.</span><span style="color:#111">floor</span><span style="color:#f92672">((</span><span style="color:#111">lon</span> <span style="color:#f92672">+</span> <span style="color:#75af00">LonRange</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">)</span> <span style="color:#f92672">/</span> <span style="color:#111">getDegreesPerTile</span><span style="color:#f92672">(</span><span style="color:#111">zoomLevel</span><span style="color:#f92672">))</span>
+    <span style="color:#f92672">.</span><span style="color:#111">toInt</span>
+  <span style="color:#00a8c8">val</span> <span style="color:#111">y</span><span style="color:#00a8c8">:</span> <span style="color:#00a8c8">Int</span> <span style="color:#f92672">=</span> <span style="color:#111">scala</span><span style="color:#f92672">.</span><span style="color:#111">math</span>
+    <span style="color:#f92672">.</span><span style="color:#111">floor</span><span style="color:#f92672">((</span><span style="color:#111">lat</span> <span style="color:#f92672">+</span> <span style="color:#75af00">LatRange</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">)</span> <span style="color:#f92672">/</span> <span style="color:#111">getDegreesPerTile</span><span style="color:#f92672">(</span><span style="color:#111">zoomLevel</span><span style="color:#f92672">))</span>
+    <span style="color:#f92672">.</span><span style="color:#111">toInt</span>
+
+  <span style="color:#111">interleaveAndGetTileId</span><span style="color:#f92672">(</span><span style="color:#111">zoomLevel</span><span style="color:#f92672">,</span> <span style="color:#111">x</span><span style="color:#f92672">,</span> <span style="color:#111">y</span><span style="color:#f92672">)</span>
+<span style="color:#f92672">}</span>
+
+<span style="color:#00a8c8">private</span> <span style="color:#00a8c8">def</span> <span style="color:#111">getDegreesPerTile</span><span style="color:#f92672">(</span><span style="color:#111">zoomLevel</span><span style="color:#00a8c8">:</span> <span style="color:#00a8c8">Int</span><span style="color:#f92672">)</span><span style="color:#00a8c8">:</span> <span style="color:#00a8c8">Double</span> <span style="color:#f92672">=</span>
+  <span style="color:#75af00">LonRange</span> <span style="color:#f92672">/</span> <span style="color:#111">scala</span><span style="color:#f92672">.</span><span style="color:#111">math</span><span style="color:#f92672">.</span><span style="color:#111">pow</span><span style="color:#f92672">(</span><span style="color:#ae81ff">2</span><span style="color:#f92672">,</span> <span style="color:#111">zoomLevel</span><span style="color:#f92672">.</span><span style="color:#111">toDouble</span><span style="color:#f92672">)</span>
+
+<span style="color:#00a8c8">private</span> <span style="color:#00a8c8">def</span> <span style="color:#111">interleaveAndGetTileId</span><span style="color:#f92672">(</span><span style="color:#111">zoomLevel</span><span style="color:#00a8c8">:</span> <span style="color:#00a8c8">Int</span><span style="color:#f92672">,</span> <span style="color:#111">x</span><span style="color:#00a8c8">:</span> <span style="color:#00a8c8">Int</span><span style="color:#f92672">,</span> <span style="color:#111">y</span><span style="color:#00a8c8">:</span> <span style="color:#00a8c8">Int</span><span style="color:#f92672">)</span><span style="color:#00a8c8">:</span> <span style="color:#00a8c8">Long</span> <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>
+  <span style="color:#75715e">// Interleave x and y, starting with y
+</span><span style="color:#75715e"></span>  <span style="color:#00a8c8">val</span> <span style="color:#111">interleaved</span><span style="color:#00a8c8">:</span> <span style="color:#00a8c8">Long</span> <span style="color:#f92672">=</span> <span style="color:#111">interleave</span><span style="color:#f92672">(</span><span style="color:#111">y</span><span style="color:#f92672">,</span> <span style="color:#111">x</span><span style="color:#f92672">)</span>
+  <span style="color:#75715e">// Prepend 1 to indicate zoom level
+</span><span style="color:#75715e"></span>  <span style="color:#f92672">(</span><span style="color:#ae81ff">1L</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#f92672">(</span><span style="color:#111">zoomLevel</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">))</span> <span style="color:#f92672">|</span> <span style="color:#111">interleaved</span>
+<span style="color:#f92672">}</span>
+
+<span style="color:#00a8c8">private</span> <span style="color:#00a8c8">def</span> <span style="color:#111">interleave</span><span style="color:#f92672">(</span><span style="color:#111">y</span><span style="color:#00a8c8">:</span> <span style="color:#00a8c8">Int</span><span style="color:#f92672">,</span> <span style="color:#111">x</span><span style="color:#00a8c8">:</span> <span style="color:#00a8c8">Int</span><span style="color:#f92672">)</span><span style="color:#00a8c8">:</span> <span style="color:#00a8c8">Long</span> <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>
+  <span style="color:#f92672">(</span><span style="color:#111">interleaveWithZero</span><span style="color:#f92672">(</span><span style="color:#111">y</span><span style="color:#f92672">)</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">)</span> <span style="color:#f92672">|</span> <span style="color:#111">interleaveWithZero</span><span style="color:#f92672">(</span><span style="color:#111">x</span><span style="color:#f92672">)</span>
+<span style="color:#f92672">}</span>
+
+<span style="color:#00a8c8">private</span> <span style="color:#00a8c8">def</span> <span style="color:#111">interleaveWithZero</span><span style="color:#f92672">(</span><span style="color:#111">value</span><span style="color:#00a8c8">:</span> <span style="color:#00a8c8">Int</span><span style="color:#f92672">)</span><span style="color:#00a8c8">:</span> <span style="color:#00a8c8">Long</span> <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>
+  <span style="color:#00a8c8">var</span> <span style="color:#111">res</span> <span style="color:#00a8c8">=</span> <span style="color:#111">value</span><span style="color:#f92672">.</span><span style="color:#111">toLong</span>
+  <span style="color:#111">res</span> <span style="color:#00a8c8">=</span> <span style="color:#f92672">(</span><span style="color:#111">res</span> <span style="color:#f92672">|</span> <span style="color:#f92672">(</span><span style="color:#111">res</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#ae81ff">16</span><span style="color:#f92672">))</span> <span style="color:#f92672">&amp;</span> <span style="color:#ae81ff">0x0000ffff0000ffff</span><span style="color:#111">L</span>
+  <span style="color:#111">res</span> <span style="color:#00a8c8">=</span> <span style="color:#f92672">(</span><span style="color:#111">res</span> <span style="color:#f92672">|</span> <span style="color:#f92672">(</span><span style="color:#111">res</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#ae81ff">8</span><span style="color:#f92672">))</span> <span style="color:#f92672">&amp;</span> <span style="color:#ae81ff">0x00ff00ff00ff00ff</span><span style="color:#111">L</span>
+  <span style="color:#111">res</span> <span style="color:#00a8c8">=</span> <span style="color:#f92672">(</span><span style="color:#111">res</span> <span style="color:#f92672">|</span> <span style="color:#f92672">(</span><span style="color:#111">res</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">))</span> <span style="color:#f92672">&amp;</span> <span style="color:#ae81ff">0x0f0f0f0f0f0f0f0f</span><span style="color:#111">L</span>
+  <span style="color:#111">res</span> <span style="color:#00a8c8">=</span> <span style="color:#f92672">(</span><span style="color:#111">res</span> <span style="color:#f92672">|</span> <span style="color:#f92672">(</span><span style="color:#111">res</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">))</span> <span style="color:#f92672">&amp;</span> <span style="color:#ae81ff">0x3333333333333333</span><span style="color:#111">L</span>
+  <span style="color:#f92672">(</span><span style="color:#111">res</span> <span style="color:#f92672">|</span> <span style="color:#f92672">(</span><span style="color:#111">res</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">))</span> <span style="color:#f92672">&amp;</span> <span style="color:#ae81ff">0x5555555555555555</span><span style="color:#111">L</span>
+<span style="color:#f92672">}</span>
+
+<span style="color:#75715e">/*
+</span><span style="color:#75715e">Test your implementation with the following test vectors:
+</span><span style="color:#75715e">
+</span><span style="color:#75715e">getTileId(52.5250754, 13.3693737, 12) : 23618402
+</span><span style="color:#75715e">getTileId(-23.551205, -46.632264, 12) : 18480753
+</span><span style="color:#75715e">getTileId(-33.86663, 151.20578, 12) : 22835176
+</span><span style="color:#75715e">getTileId(37.774888, -122.417844, 12) : 19319031
+</span><span style="color:#75715e">getTileId(51.470716, 0.057873, 12) : 23601282
+</span><span style="color:#75715e">getTileId(51.470716, -0.057873, 12) : 20805079
+</span><span style="color:#75715e">getTileId(-84.491114, -156.325441, 12) : 16845561
+</span><span style="color:#75715e">getTileId(52.52507, 13.36937, 12) : 23618402
+</span><span style="color:#75715e">getTileId(52.52507, 13.36937, 14) : 377894440
+</span><span style="color:#75715e">*/</span></code></pre></div>
+<h4 id="python">Python:</h4>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#111">LON_RANGE</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">360</span>
+<span style="color:#111">LAT_RANGE</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">180</span>
+<span style="color:#111">HALF_LON_RANGE</span> <span style="color:#f92672">=</span> <span style="color:#111">LON_RANGE</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>
+<span style="color:#111">HALF_LAT_RANGE</span> <span style="color:#f92672">=</span> <span style="color:#111">LAT_RANGE</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>
+
+<span style="color:#00a8c8">def</span> <span style="color:#75af00">get_tile_id</span><span style="color:#111">(</span><span style="color:#111">lat</span><span style="color:#111">,</span> <span style="color:#111">lon</span><span style="color:#111">,</span> <span style="color:#111">zoom_level</span><span style="color:#111">):</span>
+  <span style="color:#111">x</span> <span style="color:#f92672">=</span> <span style="color:#111">int</span><span style="color:#111">((</span><span style="color:#111">lon</span> <span style="color:#f92672">+</span> <span style="color:#111">HALF_LON_RANGE</span><span style="color:#111">)</span> <span style="color:#f92672">/</span> <span style="color:#111">get_degrees_per_tile</span><span style="color:#111">(</span><span style="color:#111">zoom_level</span><span style="color:#111">))</span>
+  <span style="color:#111">y</span> <span style="color:#f92672">=</span> <span style="color:#111">int</span><span style="color:#111">((</span><span style="color:#111">lat</span> <span style="color:#f92672">+</span> <span style="color:#111">HALF_LAT_RANGE</span><span style="color:#111">)</span> <span style="color:#f92672">/</span> <span style="color:#111">get_degrees_per_tile</span><span style="color:#111">(</span><span style="color:#111">zoom_level</span><span style="color:#111">))</span>
+  <span style="color:#00a8c8">return</span> <span style="color:#111">__interleave</span><span style="color:#111">(</span><span style="color:#111">x</span><span style="color:#111">,</span> <span style="color:#111">y</span><span style="color:#111">,</span> <span style="color:#111">zoom_level</span><span style="color:#111">)</span>
+
+<span style="color:#00a8c8">def</span> <span style="color:#75af00">__interleave</span><span style="color:#111">(</span><span style="color:#111">x</span><span style="color:#111">,</span> <span style="color:#111">y</span><span style="color:#111">,</span> <span style="color:#111">zoom_level</span><span style="color:#111">):</span>
+  <span style="color:#111">interleaved</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+  <span style="color:#00a8c8">for</span> <span style="color:#111">i</span> <span style="color:#f92672">in</span> <span style="color:#111">range</span><span style="color:#111">(</span><span style="color:#111">zoom_level</span><span style="color:#111">):</span>
+    <span style="color:#111">interleaved</span> <span style="color:#f92672">|=</span> <span style="color:#111">((</span><span style="color:#111">y</span> <span style="color:#f92672">&amp;</span> <span style="color:#111">(</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#111">i</span><span style="color:#111">))</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#111">(</span><span style="color:#111">i</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">))</span>
+    <span style="color:#111">interleaved</span> <span style="color:#f92672">|=</span> <span style="color:#111">((</span><span style="color:#111">x</span> <span style="color:#f92672">&amp;</span> <span style="color:#111">(</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#111">i</span><span style="color:#111">))</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#111">i</span><span style="color:#111">)</span>
+  <span style="color:#00a8c8">return</span> <span style="color:#111">(</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#111">(</span><span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> <span style="color:#111">zoom_level</span><span style="color:#111">))</span> <span style="color:#f92672">|</span> <span style="color:#111">interleaved</span>
+
+<span style="color:#00a8c8">def</span> <span style="color:#75af00">get_degrees_per_tile</span><span style="color:#111">(</span><span style="color:#111">zoom_level</span><span style="color:#111">):</span>
+  <span style="color:#00a8c8">return</span> <span style="color:#111">LON_RANGE</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">**</span><span style="color:#111">zoom_level</span></code></pre></div>
+<h4 id="javascript">JavaScript</h4>
+
+<p>For javascript we recommend using HERE&rsquo;s <code>@here/harp-geoutils</code> library:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00a8c8">import</span> <span style="color:#111">{</span> <span style="color:#75af00">TileKey</span><span style="color:#111">,</span>
+  <span style="color:#75af00">TileKeyUtils</span><span style="color:#111">,</span>
+  <span style="color:#75af00">hereTilingScheme</span>
+<span style="color:#111">}</span> <span style="color:#75af00">from</span> <span style="color:#d88200">&#39;@here/harp-geoutils&#39;</span>
+
+<span style="color:#75715e">// From (lat, lon, zoom level) to tile id:
+</span><span style="color:#75715e"></span><span style="color:#00a8c8">const</span> <span style="color:#75af00">fromGeo</span> <span style="color:#f92672">=</span> <span style="color:#75af00">TileKeyUtils</span><span style="color:#111">.</span><span style="color:#75af00">geoCoordinatesToTileKey</span><span style="color:#111">(</span><span style="color:#75af00">hereTilingScheme</span><span style="color:#111">,</span> <span style="color:#111">{</span>
+  <span style="color:#75af00">latitude</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">57.646790</span><span style="color:#111">,</span>
+  <span style="color:#75af00">longitude</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">12.015499</span><span style="color:#111">,</span>
+<span style="color:#111">},</span> <span style="color:#ae81ff">12</span><span style="color:#111">)</span>
+
+<span style="color:#75af00">fromGeo</span><span style="color:#111">.</span><span style="color:#75af00">toHereTile</span><span style="color:#111">()</span> <span style="color:#75715e">// &#39;23642346&#39;
+</span></code></pre></div>
+<h3 id="decoding-integer-representation-of-lat-lon-coordinates">Decoding Integer Representation of Lat/Lon Coordinates</h3>
+
+<h4 id="scala-1">Scala</h4>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala"><span style="color:#00a8c8">val</span> <span style="color:#75af00">LatRange</span> <span style="color:#00a8c8">=</span> <span style="color:#ae81ff">180</span>
+<span style="color:#00a8c8">val</span> <span style="color:#75af00">LonRange</span> <span style="color:#00a8c8">=</span> <span style="color:#ae81ff">360</span>
+<span style="color:#00a8c8">val</span> <span style="color:#75af00">LatResolution</span><span style="color:#00a8c8">:</span> <span style="color:#00a8c8">Double</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">2L</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#ae81ff">30</span>
+<span style="color:#00a8c8">val</span> <span style="color:#75af00">LonResolution</span><span style="color:#00a8c8">:</span> <span style="color:#00a8c8">Double</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">2L</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#ae81ff">31</span>
+
+<span style="color:#00a8c8">def</span> <span style="color:#111">decodeIntToLat</span><span style="color:#f92672">(</span><span style="color:#111">latInt</span><span style="color:#00a8c8">:</span> <span style="color:#00a8c8">Int</span><span style="color:#f92672">)</span><span style="color:#00a8c8">:</span> <span style="color:#00a8c8">Double</span> <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>
+  <span style="color:#111">latInt</span> <span style="color:#f92672">*</span> <span style="color:#f92672">(</span><span style="color:#75af00">LatRange</span> <span style="color:#f92672">/</span> <span style="color:#75af00">LatResolution</span><span style="color:#f92672">)</span>
+<span style="color:#f92672">}</span>
+
+<span style="color:#00a8c8">def</span> <span style="color:#111">decodeIntToLon</span><span style="color:#f92672">(</span><span style="color:#111">lonInt</span><span style="color:#00a8c8">:</span> <span style="color:#00a8c8">Int</span><span style="color:#f92672">)</span><span style="color:#00a8c8">:</span> <span style="color:#00a8c8">Double</span> <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>
+  <span style="color:#111">lonInt</span> <span style="color:#f92672">*</span> <span style="color:#f92672">(</span><span style="color:#75af00">LonRange</span> <span style="color:#f92672">/</span> <span style="color:#75af00">LonResolution</span><span style="color:#f92672">)</span>
+<span style="color:#f92672">}</span>
+
+<span style="color:#75715e">/*
+</span><span style="color:#75715e">Test your implementation with the following test vectors:
+</span><span style="color:#75715e">
+</span><span style="color:#75715e">decodeIntToLat(latInt = 626648558) : 52.5250754
+</span><span style="color:#75715e">decodeIntToLon(lonInt = 159502841) : 13.3693737
+</span><span style="color:#75715e">
+</span><span style="color:#75715e">decodeIntToLat(latInt = -280976821) : -23.551205
+</span><span style="color:#75715e">decodeIntToLon(lonInt = -556344581) : -46.632264
+</span><span style="color:#75715e">
+</span><span style="color:#75715e">decodeIntToLat(latInt = -404044635) : -33.86663
+</span><span style="color:#75715e">decodeIntToLon(lonInt = 1803955222) : 151.20578
+</span><span style="color:#75715e">
+</span><span style="color:#75715e">decodeIntToLat(latInt = 450671968) : 37.774888
+</span><span style="color:#75715e">decodeIntToLon(lonInt = -1460501768) : -122.417844
+</span><span style="color:#75715e">*/</span></code></pre></div>
+<h4 id="python-1">Python:</h4>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00a8c8">def</span> <span style="color:#75af00">decodeLatLon</span><span style="color:#111">(</span><span style="color:#111">lat</span><span style="color:#111">,</span> <span style="color:#111">lon</span><span style="color:#111">):</span>
+  <span style="color:#111">lat_range</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">180</span>
+  <span style="color:#111">lon_range</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">360</span>
+  <span style="color:#111">lat_res</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#ae81ff">30</span>
+  <span style="color:#111">lon_res</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#ae81ff">31</span>
+
+  <span style="color:#111">lat</span> <span style="color:#f92672">=</span> <span style="color:#111">lat</span> <span style="color:#f92672">*</span> <span style="color:#111">lat_range</span><span style="color:#f92672">/</span><span style="color:#111">lat_res</span>
+  <span style="color:#111">lon</span> <span style="color:#f92672">=</span> <span style="color:#111">lon</span> <span style="color:#f92672">*</span> <span style="color:#111">lon_range</span><span style="color:#f92672">/</span><span style="color:#111">lon_res</span>
+
+  <span style="color:#00a8c8">return</span> <span style="color:#111">(</span><span style="color:#111">lat</span><span style="color:#111">,</span> <span style="color:#111">lon</span><span style="color:#111">)</span></code></pre></div>
+<h4 id="javascript-1">JavaScript</h4>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00a8c8">const</span> <span style="color:#75af00">LonRange</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">360</span>
+<span style="color:#00a8c8">const</span> <span style="color:#75af00">LatRange</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">180</span>
+<span style="color:#00a8c8">const</span> <span style="color:#75af00">LatFactor</span> <span style="color:#f92672">=</span> <span style="color:#75af00">LatRange</span> <span style="color:#f92672">/</span> <span style="color:#111">Math</span><span style="color:#111">.</span><span style="color:#75af00">pow</span><span style="color:#111">(</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span> <span style="color:#ae81ff">31</span><span style="color:#111">)</span>
+<span style="color:#00a8c8">const</span> <span style="color:#75af00">LonFactor</span> <span style="color:#f92672">=</span> <span style="color:#75af00">LonRange</span> <span style="color:#f92672">/</span> <span style="color:#111">Math</span><span style="color:#111">.</span><span style="color:#75af00">pow</span><span style="color:#111">(</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span> <span style="color:#ae81ff">32</span><span style="color:#111">)</span>
+
+<span style="color:#00a8c8">function</span> <span style="color:#75af00">decodeIntToLat</span><span style="color:#111">(</span><span style="color:#75af00">latInt</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+  <span style="color:#00a8c8">return</span> <span style="color:#75af00">latInt</span> <span style="color:#f92672">*</span> <span style="color:#75af00">LatFactor</span>
+<span style="color:#111">}</span>
+
+<span style="color:#00a8c8">function</span> <span style="color:#75af00">decodeIntToLon</span><span style="color:#111">(</span><span style="color:#75af00">lonInt</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+  <span style="color:#00a8c8">return</span> <span style="color:#75af00">lonInt</span> <span style="color:#f92672">*</span> <span style="color:#75af00">LonFactor</span>
+<span style="color:#111">}</span></code></pre></div>
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+</div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+    
+
+    
+  </div>
+
+
+	<div>
+
+
+  
+    
+  
+
+
+
+	</div>
+</footer>
+
+<script src="../js/clipboard.min.js"></script>
+
+<link href="../css/featherlight.min.css" rel="stylesheet">
+<script src="../js/featherlight.min.js"></script>
+
+
+
+<script src="../theme-flex/script.js"></script>
+
+
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+     extensions: ["tex2jax.js"],
+     jax: ["input/TeX", "output/HTML-CSS"],
+     tex2jax: {
+         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+         displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+         processEscapes: true
+     },
+     "HTML-CSS": { availableFonts: ["TeX"] }
+ });
+</script>
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+    
+
+    
+    
+
+    
+  </body>
+</html>

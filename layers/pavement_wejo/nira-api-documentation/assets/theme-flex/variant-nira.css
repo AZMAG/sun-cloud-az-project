@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+:root{
+    --NIRA-MAIN-color:#6e9dd4;
+    --NIRA-GRAY-color:#6f6f6e;
+    --NIRA-DARK-color:#4b6d8e;
+    --SIDE-MAIN-TXT-color:#231F20;
+    --SIDE-FOCUS-FORE-color:white;
+    --MENU-LINK-color:#EAEAEA;
+    --MENU-ACTIVE-BACK-color:#EAEAEA;
+    --MENU-ACTIVE-LINK-color:#6f6f6e;
+}
+header {
+    background-color: var(--NIRA-MAIN-color);
+    color: white;
+}
+header:after {
+    background: none;
+    background-color: var(--NIRA-GRAY-color);
+}
+header nav.shortcuts li a:hover {
+    background-color: var(--NIRA-DARK-color);
+}
+
+#header > a {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}
+
+article > aside {
+    background-color: #f9f9f9;
+    padding-top: 0;
+}
+article > aside .menu .dd-item.active > div {
+    background-color: #eee;
+}
+article > aside .menu .dd-item.active > div * {
+    font-weight: bold;
+    border-bottom: solid 1px var(--NIRA-MAIN-color);
+}
+article > aside .menu .dd-item div a:hover, article > aside .menu .dd-item div a:focus, article > aside .menu .dd-item div a:active {
+    background-color: #eee;
+}
+article > aside .menu .dd-item div i.category-icon:hover {
+    background-color: #eee;
+}
+article > aside .menu .dd-item li {
+    border-left: 1px solid #eee;
+}
+
+
+/* Side menu emoji flair */
+article > aside .menu > .dd-item[data-nav-id$="/vp/"] div a[href$="/vp/"]::before {
+    content: "🚗 ";
+}
+
+article > aside .menu > .dd-item[data-nav-id$="/fp/"] div a[href$="/fp/"]::before {
+    content: "🌍 ";
+}
+
+article > aside .menu > .dd-item[data-nav-id$="/ccc/"] div a[href$="/ccc/"]::before {
+    content: "🍻 ";
+}
+
+article > aside .menu > .dd-item[data-nav-id$="/vf/"] div a[href$="/vf/"]::before {
+    content: "🌦 ";
+}
+
+article > aside .menu > .dd-item[data-nav-id$="/products/"] div a[href$="/products/"]::before {
+    content: "💶 ";
+}
+
+article > aside .menu > .dd-item[data-nav-id$="/processes/"] div a[href$="/processes/"]::before {
+    content: "👾 ";
+}
+
+article > aside .menu > .dd-item[data-nav-id$="/documentation_tools/"] div a[href$="/documentation_tools/"]::before {
+    content: "📖 ";
+}
+
+/* Styling for PDF Printing of Documentation */
+@media print {
+    article {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+
+    article > aside {
+      display: none; }
+
+    footer {
+      display: none; }
+
+    article > section.page {
+      margin: 0 0;
+      padding: 1rem;
+      overflow-y: initial;
+    }
+
+    article > section.page #navigation label {
+      display: none; }
+
+    section {
+      margin: 0;
+      padding: 1rem 2rem; }
+
+    header {
+      display: none;
+    }
+
+    header > nav.shortcuts {
+      display: none;
+    }
+
+    div.searchbox {
+      display: none;
+    }
+
+    header > nav.shortcuts > li a {
+      width: 3.5rem; }
+
+    header > nav.shortcuts > li .fa {
+      margin: 0; }
+
+    header > nav.shortcuts > li > a > label {
+      display: none; }
+
+    header > nav.shortcuts > li > a {
+      max-width: 32px; }
+
+    .nav-select {
+      display: none;
+      margin-left: -10px;
+      margin-right: -10px; }
+
+    .nav-select select {
+      display: block; }
+
+    article img {
+      margin-left: -1rem;
+      margin-right: -1rem; }
+}

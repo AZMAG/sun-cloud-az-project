@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Customer-Api</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2022-05-18T14:27:04 UTC">
+<title>Here-Tile Offset :: Customer-Api</title>
+<link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon" />
+<link href="../css/font-awesome.min.css" rel="stylesheet">
+<link href="../css/nucleus.css" rel="stylesheet">
+<link href="../theme-flex/style.css" rel="stylesheet">
+
+	<link href="../theme-flex/variant-nira.css" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<script src="../js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "";
+</script>
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="../endpoints/here-tile-offset.html">
+    
+      <header>
+  <div class="logo">
+     
+<span id="header" style="font-size: larger">
+  <a id="logo" href="">
+    <img src="../images/white_logo_0.png" alt="NIRA Dynamics" />
+  </a>
+</span>
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+    <li data-nav-id="/general.html" class="dd-item haschildren
+        ">
+      <div>
+      <a href="../general.html">General</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/general/tile-documentation.html" class="dd-item">
+        <div>
+          <a href="../general/tile-documentation.html">
+            Tile Concept Explained
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/general/authentication.html" class="dd-item">
+        <div>
+          <a href="../general/authentication.html">
+            Authentication
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/general/data-bundles.html" class="dd-item">
+        <div>
+          <a href="../general/data-bundles.html">
+            Data Bundles
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/general/protobuf-documentation.html" class="dd-item">
+        <div>
+          <a href="../general/protobuf-documentation.html">
+            Google Protocol Buffer Explained
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/general/api-testing.html" class="dd-item">
+        <div>
+          <a href="../general/api-testing.html">
+            Test the API
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/general/code.html" class="dd-item">
+        <div>
+          <a href="../general/code.html">
+            Code Examples
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/endpoints.html" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="../endpoints.html">Endpoints</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/endpoints/auth.html" class="dd-item">
+        <div>
+          <a href="../endpoints/auth.html">
+            Authentication
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/endpoints/data-bundles.html" class="dd-item">
+        <div>
+          <a href="../endpoints/data-bundles.html">
+            Data Bundle Permissions
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/endpoints/here-tile-offset.html" class="dd-item active">
+        <div>
+          <a href="../endpoints/here-tile-offset.html">
+            Here-Tile Offset
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/endpoints/here-tile-sublink.html" class="dd-item">
+        <div>
+          <a href="../endpoints/here-tile-sublink.html">
+            Here-Tile Sublink
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/endpoints/mapbox-vector-tile.html" class="dd-item">
+        <div>
+          <a href="../endpoints/mapbox-vector-tile.html">
+            Mapbox Vector Tile
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/general.html" >
+   General</option>
+    <option value="/endpoints.html" >
+   Endpoints</option> 
+      <option value="/endpoints/auth.html" >- Authentication</option>
+      <option value="/endpoints/data-bundles.html" >- Data Bundle Permissions</option>
+      <option value="/endpoints/here-tile-offset.html"  selected>- Here-Tile Offset</option>
+      <option value="/endpoints/here-tile-sublink.html" >- Here-Tile Sublink</option>
+      <option value="/endpoints/mapbox-vector-tile.html" >- Mapbox Vector Tile</option>
+  
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+        <script type="text/javascript" src="../js/lunr.min.js"></script>
+        <script type="text/javascript" src="../js/auto-complete.js"></script>
+        <link href="../css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+              var baseurl = "";
+          
+        </script>
+        <script type="text/javascript" src="../js/search.js"></script>
+      </div>
+    
+
+    <h1>Here-Tile Offset</h1>
+    
+    
+    
+    
+
+<p>The structure of <em>Here-Tile offset</em> uses the concept of offset and the structure of data is similar to <em>Here-Tile sublink</em>.
+This means that in order to identify the location of a data point, the data is correlated with a road id and an offset
+from that road&rsquo;s start position. To calculate the segment (if both start and end offset are used) or the point,
+calculate the position of the offset by following the road geometry. This is done in the following way:</p>
+
+<ul>
+<li>Start offset as percent of link length from start</li>
+<li>End offset as percent of link length from end (in order to save space with 0-value)</li>
+</ul>
+
+<p>Pay extra attention to the difference between startOffset and endOffset:</p>
+
+<ul>
+<li>startOffset is measured from the start of the link</li>
+<li>endOffset is measured from the end of the link</li>
+</ul>
+
+<p>Examples:</p>
+
+<ul>
+<li>If startOffset = 0.25 and endOffset = 0.25, then 25% to 75% from the start of the link is selected
+(in total 50% of the link covered)</li>
+<li>If startOffset = 0.25 and endOffset = 0 then 25% to 100% from the start of the link is selected
+(in total 75% of the link covered)</li>
+<li>If startOffset = 0.75 and endOffset = 0.75, then 25% to 75% from the start of the link is selected
+And the direction of travel is reversed.</li>
+</ul>
+
+<p>An image demonstrating &ldquo;startOffset&rdquo; and &ldquo;endOffset&rdquo; is available here:
+<a href="./roadLayerOffsets.png">roadLayerOffsets.png</a>
+</p>
+
+<p>This API also separates the data from the underlying road network geometry. This reduces
+the size of the requests as the geometry can be fetched once instead of each time.</p>
+
+<h2 id="endpoints">Endpoints</h2>
+
+<ul>
+<li>/tiles/roadlayer</li>
+<li>/tiles/roadlayer-geometry</li>
+</ul>
+
+<h3 id="tiles-roadlayer"><em>/tiles/roadlayer</em></h3>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Road layer tiles</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>URL</strong></td>
+<td>/tiles/roadlayer/:bundle_name/:tile_id/:timestamp</td>
+</tr>
+
+<tr>
+<td><strong>Method</strong></td>
+<td>GET</td>
+</tr>
+
+<tr>
+<td><strong>URL params</strong></td>
+<td><em>bundle_name</em>: see <a href="../endpoints/data-bundles.html#user-data-bundles"><em>/user/data-bundles</em></a><br><em>tile_id</em>: Computed Tile Id (see <a href="../general/code.html#computing-tile-id">code examples</a>).<br><em>timestamp</em>: ISO-8601 string with the UTC date and time for the data to fetch.</td>
+</tr>
+
+<tr>
+<td><strong>Success response</strong></td>
+<td>HTTP Status 200<br>Content-Type: application/x-protobuf<br>Content: Serialized <code>se.niradynamics.ncs.protobuf.output.RoadLayerTile.proto</code> data</td>
+</tr>
+
+<tr>
+<td><strong>Error response</strong></td>
+<td>HTTP Status 401: Invalid session.<br>HTTP Status 403: Not authorized to perform the request. Possible reasons: the <em>bundle_name</em> is invalid, or the <em>timestamp</em> requested is outside of your boundaries, or the <em>tile_id</em> area is outside your geographic boundaries.<br>HTTP Status 404: No tile generated, ie. no data available for the request. Either there is no data available for this area, or the generation is not yet available.</td>
+</tr>
+
+<tr>
+<td><strong>Sample call</strong></td>
+<td><code>curl 'https://gui.cloud.niradynamics.se/api2018/tiles/roadlayer/road-segment-aggregation-2/23642645/2021-12-03T08:00:00Z' -H 'cookie: cookie-agreed=2; AUTH_SESSION=THE_AUTH_SESSION_CONTENT'</code></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="tiles-roadlayer-geometry"><em>/tiles/roadlayer-geometry</em></h3>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Geometry tiles</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>URL</strong></td>
+<td>/tiles/roadlayer-geometry/:geometry_reference/:tile_id?version=</td>
+</tr>
+
+<tr>
+<td><strong>Method</strong></td>
+<td>GET</td>
+</tr>
+
+<tr>
+<td><strong>URL params</strong></td>
+<td><em>geometry_reference</em>: Reference to which map to use. It should be the value taken from the response from the roadlayer tile request. <br><em>tile_id</em>: Computed Tile Id (see <a href="../general/code.html#computing-tile-id">code examples</a>).</td>
+</tr>
+
+<tr>
+<td><strong>Query params</strong></td>
+<td><em>version</em> (optional): Should be set to the same as given in roadlayer tile (or left out if none is set).</td>
+</tr>
+
+<tr>
+<td><strong>Success response</strong></td>
+<td>HTTP Status 200<br>Content-Type: application/x-protobuf<br>Content: Serialized <code>se.niradynamics.ncs.protobuf.output.RoadLayerGeometryTile.proto</code> data.</td>
+</tr>
+
+<tr>
+<td><strong>Error response</strong></td>
+<td>HTTP Status 400: Bad Request. If no version parameter was supplied but the map reference required version information.<br>HTTP Status 401: Invalid auth session<br>HTTP Status 403: Not authorized to perform the request. Possible reasons: the <em>geometry_reference</em> is invalid, or the <em>tile_id</em> area is outside your geographic boundaries.<br>HTTP Status 404: No tile generated, ie. there is no data available for this area.</td>
+</tr>
+
+<tr>
+<td><strong>Sample calls</strong></td>
+<td><code>curl 'http://gui.cloud.niradynamics.se/api2018/tiles/roadlayer-geometry/hrn:here:data::olp-here:here-optimized-map-for-location-library-2/23642688?version=2464' -H 'cookie: cookie-agreed=2; AUTH_SESSION=THE_AUTH_SESSION_CONTENT'</code></td>
+</tr>
+</tbody>
+</table>
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+</div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+    
+
+    
+  </div>
+
+
+	<div>
+
+
+  
+    
+  
+
+
+
+	</div>
+</footer>
+
+<script src="../js/clipboard.min.js"></script>
+
+<link href="../css/featherlight.min.css" rel="stylesheet">
+<script src="../js/featherlight.min.js"></script>
+
+
+
+<script src="../theme-flex/script.js"></script>
+
+
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+     extensions: ["tex2jax.js"],
+     jax: ["input/TeX", "output/HTML-CSS"],
+     tex2jax: {
+         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+         displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+         processEscapes: true
+     },
+     "HTML-CSS": { availableFonts: ["TeX"] }
+ });
+</script>
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+    
+
+    
+    
+
+    
+  </body>
+</html>

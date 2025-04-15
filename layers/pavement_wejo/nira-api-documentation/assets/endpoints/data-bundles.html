@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Customer-Api</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2022-05-18T14:27:04 UTC">
+<title>Data Bundle Permissions :: Customer-Api</title>
+<link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon" />
+<link href="../css/font-awesome.min.css" rel="stylesheet">
+<link href="../css/nucleus.css" rel="stylesheet">
+<link href="../theme-flex/style.css" rel="stylesheet">
+
+	<link href="../theme-flex/variant-nira.css" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<script src="../js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "";
+</script>
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="../endpoints/data-bundles.html">
+    
+      <header>
+  <div class="logo">
+     
+<span id="header" style="font-size: larger">
+  <a id="logo" href="">
+    <img src="../images/white_logo_0.png" alt="NIRA Dynamics" />
+  </a>
+</span>
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+    <li data-nav-id="/general.html" class="dd-item haschildren
+        ">
+      <div>
+      <a href="../general.html">General</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/general/tile-documentation.html" class="dd-item">
+        <div>
+          <a href="../general/tile-documentation.html">
+            Tile Concept Explained
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/general/authentication.html" class="dd-item">
+        <div>
+          <a href="../general/authentication.html">
+            Authentication
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/general/data-bundles.html" class="dd-item">
+        <div>
+          <a href="../general/data-bundles.html">
+            Data Bundles
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/general/protobuf-documentation.html" class="dd-item">
+        <div>
+          <a href="../general/protobuf-documentation.html">
+            Google Protocol Buffer Explained
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/general/api-testing.html" class="dd-item">
+        <div>
+          <a href="../general/api-testing.html">
+            Test the API
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/general/code.html" class="dd-item">
+        <div>
+          <a href="../general/code.html">
+            Code Examples
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/endpoints.html" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="../endpoints.html">Endpoints</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/endpoints/auth.html" class="dd-item">
+        <div>
+          <a href="../endpoints/auth.html">
+            Authentication
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/endpoints/data-bundles.html" class="dd-item active">
+        <div>
+          <a href="../endpoints/data-bundles.html">
+            Data Bundle Permissions
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/endpoints/here-tile-offset.html" class="dd-item">
+        <div>
+          <a href="../endpoints/here-tile-offset.html">
+            Here-Tile Offset
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/endpoints/here-tile-sublink.html" class="dd-item">
+        <div>
+          <a href="../endpoints/here-tile-sublink.html">
+            Here-Tile Sublink
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/endpoints/mapbox-vector-tile.html" class="dd-item">
+        <div>
+          <a href="../endpoints/mapbox-vector-tile.html">
+            Mapbox Vector Tile
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/general.html" >
+   General</option>
+    <option value="/endpoints.html" >
+   Endpoints</option> 
+      <option value="/endpoints/auth.html" >- Authentication</option>
+      <option value="/endpoints/data-bundles.html"  selected>- Data Bundle Permissions</option>
+      <option value="/endpoints/here-tile-offset.html" >- Here-Tile Offset</option>
+      <option value="/endpoints/here-tile-sublink.html" >- Here-Tile Sublink</option>
+      <option value="/endpoints/mapbox-vector-tile.html" >- Mapbox Vector Tile</option>
+  
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+        <script type="text/javascript" src="../js/lunr.min.js"></script>
+        <script type="text/javascript" src="../js/auto-complete.js"></script>
+        <link href="../css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+              var baseurl = "";
+          
+        </script>
+        <script type="text/javascript" src="../js/search.js"></script>
+      </div>
+    
+
+    <h1>Data Bundle Permissions</h1>
+    
+    
+    
+    
+
+<p>The data bundles endpoint is used to fetch data bundles, referred as <em>bundle_name</em> in the API documentation, which you have access to.<br />
+It will also describe if there are any restrictions in time or regions that you have access to.</p>
+
+<p>To get more details about each <em>bundle_name</em> read about it <a href="../general/data-bundles.html">here</a></p>
+
+<h2 id="endpoints">Endpoints</h2>
+
+<ul>
+<li>/user/data-bundles</li>
+</ul>
+
+<h3 id="user-data-bundles"><em>user/data-bundles</em></h3>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Data Bundles Permissions</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>URL</strong></td>
+<td>/user/data-bundles</td>
+</tr>
+
+<tr>
+<td><strong>Method</strong></td>
+<td>GET</td>
+</tr>
+
+<tr>
+<td><strong>Success response</strong></td>
+<td>HTTP Status 200<br>Content-Type: application/json<br>Content: <code>[{&quot;bundle_name&quot;:&quot;road-segment-aggregation-2&quot;,&quot;session&quot;:5,&quot;start_time&quot;:&quot;2022-03-26T00:00:00.000Z&quot;,&quot;end_time&quot;:null,&quot;regions&quot;:[],&quot;additional_regions&quot;:[]}]</code></td>
+</tr>
+
+<tr>
+<td><strong>Error response</strong></td>
+<td>HTTP Status 401: Invalid credentials</td>
+</tr>
+
+<tr>
+<td><strong>Sample call</strong></td>
+<td><code>curl 'https://gui.cloud.niradynamics.se/api2018/user/data-bundles' -H 'cookie: cookie-agreed=2; AUTH_SESSION=THE_AUTH_SESSION_CONTENT'</code></td>
+</tr>
+</tbody>
+</table>
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+</div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+    
+
+    
+  </div>
+
+
+	<div>
+
+
+  
+    
+  
+
+
+
+	</div>
+</footer>
+
+<script src="../js/clipboard.min.js"></script>
+
+<link href="../css/featherlight.min.css" rel="stylesheet">
+<script src="../js/featherlight.min.js"></script>
+
+
+
+<script src="../theme-flex/script.js"></script>
+
+
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+     extensions: ["tex2jax.js"],
+     jax: ["input/TeX", "output/HTML-CSS"],
+     tex2jax: {
+         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+         displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+         processEscapes: true
+     },
+     "HTML-CSS": { availableFonts: ["TeX"] }
+ });
+</script>
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+    
+
+    
+    
+
+    
+  </body>
+</html>

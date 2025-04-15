@@ -1,0 +1,299 @@
+openapi: 3.0.0
+info:
+  title: NIRA API
+  description: NIRA Dynamics Data API
+  version: 1.0.0
+servers:
+  - url: https://gui.cloud.niradynamics.se/api2018/
+components:
+  securitySchemes:
+    cookieAuth:
+      type: apiKey
+      in: cookie
+      name: AUTH_SESSION
+security:
+  - cookieAuth: []
+paths:
+  /user/login:
+    post:
+      summary: Authenticates the user and returns a cookie used for authentication.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                password:
+                  type: string
+      description:
+        You will get a cookie AUTH_SESSION. Make sure you attach AUTH_SESSION to subsequent requests.
+        The AUTH_SESSION is valid for a week. Every time you make a request to an endpoint you will get a new AUTH_SESSION,
+        meaning it will be refreshed for another week.
+      security: []
+      responses:
+        200:
+          description: OK
+          headers:
+            Set-Cookie:
+              schema:
+                type: string
+                example: AUTH_SESSION=abcde12345; Path=/; HttpOnly
+        401:
+          description: Invalid credentials
+      tags:
+        - Authentication
+  /user/logout:
+    post:
+      summary: Invalidates the current users session.
+      responses:
+        200:
+          description: OK
+      tags:
+        - Authentication
+  /user/data-bundles:
+    get:
+      summary: Fetches a list of data_bundles that you have access to
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+        401:
+          description: Invalid credentials
+      tags:
+        - Data Bundle Permissions
+  /tiles/roadlayer/{bundle_name}/{tile_id}/{timestamp}:
+    get:
+      summary: Fetches tile data for a given data bundle at a given time.
+      parameters:
+        - name: bundle_name
+          in: path
+          required: true
+          description: Bundle name of the data bundle to request.
+          schema:
+            type: string
+        - name: tile_id
+          in: path
+          required: true
+          description: Tile id of the specifid tile to request.
+          schema:
+            type: integer
+        - name: timestamp
+          in: path
+          required: true
+          description: Timestamp of the data to request. Each data bundle have it's own interval of data production, so read data bundle documentation to see which timestamps are available.
+          schema:
+            type: integer
+      responses:
+        200:
+          description: OK
+          content:
+            application/x-protobuf:
+              schema:
+                type: object
+        401:
+          description: Not authenticated
+        403:
+          description: Not authorized. Possible reasons are the `bundle_name` is invalid, the `timestamp` requested is outside of your boundaries, or the `tile_id` area is outside your geographic boundaries.
+        404:
+          description: No tile generated, ie. no data available for the request. Either there is no data available for this area, or the generation is not yet available.
+      tags:
+        - HERE Tile Offset
+  /tiles/roadlayer-geometry/{geometry_reference}/{tile_id}:
+    get:
+      summary: Fetches tile geometry for a given geometry reference.
+      parameters:
+        - name: geometry_reference
+          in: path
+          required: true
+          description: Geometry reference to request, should use the same as the field included in the response from `/tiles/roadlayer/`.
+          schema:
+            type: string
+        - name: tile_id
+          in: path
+          required: true
+          description: Tile id of the specifid tile to request.
+          schema:
+            type: integer
+        - name: version
+          in: query
+          required: false
+          description: Version of the geometry refetence to request, should use the same as the field included in the response from `/tiles/roadlayer/` if set.
+          schema:
+            type: integer
+      responses:
+        200:
+          description: OK
+          content:
+            application/x-protobuf:
+              schema:
+                type: object
+        400:
+          description: Bad request. If no version parameter was supplied but the map reference required version information.
+        401:
+          description: Not authenticated
+        403:
+          description: Not authorized. Possible reasons are the `geometry_reference` is invalid or the `tile_id` area is outside your geographic boundaries.
+        404:
+          description: No tile generated, ie. no data available for the request. Either there is no data available for this area.
+      tags:
+        - HERE Tile Offset
+  /tiles/aggregated/{bundle_name}/-1/{tile_id}/{timestamp}/5/-1:
+    get:
+      summary: Fetches tile data for a given data bundle at a given time.
+      parameters:
+        - name: bundle_name
+          in: path
+          required: true
+          description: Bundle name of the data bundle to request.
+          schema:
+            type: string
+        - name: tile_id
+          in: path
+          required: true
+          description: Tile id of the specifid tile to request.
+          schema:
+            type: integer
+        - name: timestamp
+          in: path
+          required: true
+          description: Timestamp of the data to request. Each data bundle have it's own interval of data production, so read data bundle documentation to see which timestamps are available.
+          schema:
+            type: integer
+      responses:
+        200:
+          description: OK
+          content:
+            application/x-protobuf:
+              schema:
+                type: object
+        401:
+          description: Not authenticated
+        403:
+          description: Not authorized. Possible reasons are the `bundle_name` is invalid, the `timestamp` requested is outside of your boundaries, or the `tile_id` area is outside your geographic boundaries.
+        404:
+          description: No tile generated, ie. no data available for the request. Either there is no data available for this area, or the generation is not yet available.
+      tags:
+        - HERE Tile Sublink
+  /tiles/geometry/{geometry_reference}/{tile_id}:
+    get:
+      summary: Fetches tile geometry for a given geometry reference.
+      parameters:
+        - name: geometry_reference
+          in: path
+          required: true
+          description: Geometry reference to request, should use the same as the field included in the response from `/tiles/aggregated/`.
+          schema:
+            type: string
+        - name: tile_id
+          in: path
+          required: true
+          description: Tile id of the specifid tile to request.
+          schema:
+            type: integer
+        - name: version
+          in: query
+          required: false
+          description: Version of the geometry refetence to request, should use the same as the field included in the response from `/tiles/aggregated/` if set.
+          schema:
+            type: integer
+      responses:
+        200:
+          description: OK
+          content:
+            application/x-protobuf:
+              schema:
+                type: object
+        400:
+          description: Bad request. If no version parameter was supplied but the map reference required version information.
+        401:
+          description: Not authenticated
+        403:
+          description: Not authorized. Possible reasons are the `geometry_reference` is invalid or the `tile_id` area is outside your geographic boundaries.
+        404:
+          description: No tile generated, ie. no data available for the request. Either there is no data available for this area.
+      tags:
+        - HERE Tile Sublink
+  /tiles/vector/example/{level}/{column}/{row}:
+    get:
+      summary: Fetches an example mapbox vector tile. Used for visualization testing.
+      parameters:
+        - name: level
+          in: path
+          required: true
+          description: Zoom level of the tile requested.
+          schema:
+            type: integer
+        - name: column
+          in: path
+          required: true
+          description: Column id of the tile requeseted.
+          schema:
+            type: integer
+        - name: row
+          in: path
+          required: true
+          description: Row id of the tile requested.
+          schema:
+            type: integer
+      responses:
+        200:
+          description: OK
+          content:
+            application/x-protobuf:
+              schema:
+                type: object
+        400:
+          description: Bad request, the combination of `level`, `column` and `row` is invalid.
+      tags:
+        - Mapbox Vector Tile
+  /tiles/vector/aggregated/{bundle_name}/{level}/{column}/{row}:
+    get:
+      summary: Fetches an mapbox vector tile for a given data bundle.
+      parameters:
+        - name: bundle_name
+          in: path
+          required: true
+          description: Bundle name of the data bundle to request.
+          schema:
+            type: string
+        - name: level
+          in: path
+          required: true
+          description: Zoom level of the tile requested.
+          schema:
+            type: integer
+        - name: column
+          in: path
+          required: true
+          description: Column id of the tile requeseted.
+          schema:
+            type: integer
+        - name: row
+          in: path
+          required: true
+          description: Row id of the tile requested.
+          schema:
+            type: integer
+      responses:
+        200:
+          description: OK
+          content:
+            application/x-protobuf:
+              schema:
+                type: object
+        400:
+          description: Bad request, the combination of `level`, `column` and `row` is invalid.
+        401:
+          description: Not authenticated
+        403:
+          description: Not authorized. Possible reasons are the `bundle_name` is invalid or `tile_id` area is outside your geographic boundaries.
+        404:
+          description: No tile generated, ie. no data available for the request. Either there is no data available for this area.
+      tags:
+        - Mapbox Vector Tile

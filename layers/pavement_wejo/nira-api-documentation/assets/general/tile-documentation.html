@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Customer-Api</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2022-05-18T14:27:04 UTC">
+<title>Tile Concept Explained :: Customer-Api</title>
+<link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon" />
+<link href="../css/font-awesome.min.css" rel="stylesheet">
+<link href="../css/nucleus.css" rel="stylesheet">
+<link href="../theme-flex/style.css" rel="stylesheet">
+
+	<link href="../theme-flex/variant-nira.css" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<script src="../js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "";
+</script>
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="../general/tile-documentation.html">
+    
+      <header>
+  <div class="logo">
+     
+<span id="header" style="font-size: larger">
+  <a id="logo" href="">
+    <img src="../images/white_logo_0.png" alt="NIRA Dynamics" />
+  </a>
+</span>
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+    <li data-nav-id="/general.html" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="../general.html">General</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/general/tile-documentation.html" class="dd-item active">
+        <div>
+          <a href="../general/tile-documentation.html">
+            Tile Concept Explained
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/general/authentication.html" class="dd-item">
+        <div>
+          <a href="../general/authentication.html">
+            Authentication
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/general/data-bundles.html" class="dd-item">
+        <div>
+          <a href="../general/data-bundles.html">
+            Data Bundles
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/general/protobuf-documentation.html" class="dd-item">
+        <div>
+          <a href="../general/protobuf-documentation.html">
+            Google Protocol Buffer Explained
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/general/api-testing.html" class="dd-item">
+        <div>
+          <a href="../general/api-testing.html">
+            Test the API
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/general/code.html" class="dd-item">
+        <div>
+          <a href="../general/code.html">
+            Code Examples
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/endpoints.html" class="dd-item haschildren
+        ">
+      <div>
+      <a href="../endpoints.html">Endpoints</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/endpoints/auth.html" class="dd-item">
+        <div>
+          <a href="../endpoints/auth.html">
+            Authentication
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/endpoints/data-bundles.html" class="dd-item">
+        <div>
+          <a href="../endpoints/data-bundles.html">
+            Data Bundle Permissions
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/endpoints/here-tile-offset.html" class="dd-item">
+        <div>
+          <a href="../endpoints/here-tile-offset.html">
+            Here-Tile Offset
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/endpoints/here-tile-sublink.html" class="dd-item">
+        <div>
+          <a href="../endpoints/here-tile-sublink.html">
+            Here-Tile Sublink
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/endpoints/mapbox-vector-tile.html" class="dd-item">
+        <div>
+          <a href="../endpoints/mapbox-vector-tile.html">
+            Mapbox Vector Tile
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/general.html" >
+   General</option> 
+      <option value="/general/tile-documentation.html"  selected>- Tile Concept Explained</option>
+      <option value="/general/authentication.html" >- Authentication</option>
+      <option value="/general/data-bundles.html" >- Data Bundles</option>
+      <option value="/general/protobuf-documentation.html" >- Google Protocol Buffer Explained</option>
+      <option value="/general/api-testing.html" >- Test the API</option>
+      <option value="/general/code.html" >- Code Examples</option>
+  
+    <option value="/endpoints.html" >
+   Endpoints</option>
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+        <script type="text/javascript" src="../js/lunr.min.js"></script>
+        <script type="text/javascript" src="../js/auto-complete.js"></script>
+        <link href="../css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+              var baseurl = "";
+          
+        </script>
+        <script type="text/javascript" src="../js/search.js"></script>
+      </div>
+    
+
+    <h1>Tile Concept Explained</h1>
+    
+    
+    
+    
+
+<h3 id="what-is-a-tile">What is a Tile?</h3>
+
+<p>A common technique to display maps on a computer is to divide the map into a grid (XY-plane) of rectangles.
+Each rectangle in this grid is called a <em>map tile</em> and together the grid becomes a <em>tile grid</em>.</p>
+
+<p>This enables a map application to only load visible tiles instead of the entire map. How the grid
+is constructed is determined by the map creator. To refer to a specific tile
+it is common to either use the XY-planes respective X and Y coordinate or to have a <em>tile-id</em> that
+combines the plane coordinate into a single number.</p>
+
+<p>In most map applications the end user can also zoom to get a more detailed view of a specific area.
+This zoom is commonly referred to as <em>level</em>, <em>zoom-level</em> or <em>z-axis</em>.
+Thereby, to refer to a specific tile one needs to supply both the tile reference and the zoom.</p>
+
+<p>For example, the definition of a HERE-tile is a combination of a tile-id and level. For Mapbox vector tiles
+one instead uses a combination of X,Y,Z coordinates.</p>
+
+<p>NIRA&rsquo;s API contains two tile definitions, one definition for the HERE-tile based API and one for the
+Mapbox vector tile API.</p>
+
+<h4 id="here-tile">HERE-Tile</h4>
+
+<p>For HERE-tiles, please read the <a href="https://developer.here.com/documentation/data-api/data_dev_guide/rest/partitions.html">HERE documenation</a>.</p>
+
+<p>Note how to calculate the <em>tile id</em> as that is used in the request to the APIs. Code examples
+of this can be seen in our <a href="../general/code.html#computing-tile-id">code examples page</a>.</p>
+
+<h4 id="mapbox-vector-tile">Mapbox Vector Tile</h4>
+
+<p>For vector tiles, please read the documentation at <a href="https://docs.mapbox.com/data/tilesets/guides/vector-tiles-standards/">Mapbox own site</a>.
+However, if using a library with support for Mapbox vector tile the
+intricacy of tiles is most likely handled by the library.</p>
+
+<p>Special things to note is the chapter of <a href="https://docs.mapbox.com/data/tilesets/guides/vector-tiles-standards/#clipping">clipping</a>.</p>
+<pre tabindex="0"><code>Note: Encoded geometry in vector tiles can extend beyond the boundary of the tile. This means features are not required to be clipped.</code></pre>
+<p>Also note that the vector tile geometry is in relative coordinates to the vector tile itself as
+described in the <a href="https://docs.mapbox.com/data/tilesets/guides/vector-tiles-standards/#encoding-geometry">geometry section</a>.</p>
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+</div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+    
+
+    
+  </div>
+
+
+	<div>
+
+
+  
+    
+  
+
+
+
+	</div>
+</footer>
+
+<script src="../js/clipboard.min.js"></script>
+
+<link href="../css/featherlight.min.css" rel="stylesheet">
+<script src="../js/featherlight.min.js"></script>
+
+
+
+<script src="../theme-flex/script.js"></script>
+
+
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+     extensions: ["tex2jax.js"],
+     jax: ["input/TeX", "output/HTML-CSS"],
+     tex2jax: {
+         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+         displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+         processEscapes: true
+     },
+     "HTML-CSS": { availableFonts: ["TeX"] }
+ });
+</script>
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+    
+
+    
+    
+
+    
+  </body>
+</html>
