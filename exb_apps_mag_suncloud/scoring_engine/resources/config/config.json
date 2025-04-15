@@ -1,0 +1,1529 @@
+{
+  "pages": {
+    "page_0": {
+      "id": "page_0",
+      "mode": "FIT_WINDOW",
+      "type": "NORMAL",
+      "layout": {
+        "LARGE": "layout_0"
+      },
+      "isDefault": true,
+      "isVisible": true,
+      "label": "Page"
+    }
+  },
+  "layouts": {
+    "layout_0": {
+      "type": "FIXED",
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "0.0%",
+            "right": "0.0%",
+            "top": "10.3%",
+            "bottom": "-0.0%",
+            "width": "100.0%",
+            "height": "89.7%"
+          },
+          "widgetId": "widget_1",
+          "setting": {
+            "autoProps": {
+              "left": true,
+              "right": false,
+              "top": true,
+              "bottom": false
+            },
+            "vCenter": false,
+            "hCenter": false
+          },
+          "isPending": false
+        },
+        "1": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "0.0%",
+            "right": "0.0%",
+            "top": "0.0%",
+            "bottom": "89.4%",
+            "width": "100.0%",
+            "height": "10.6%"
+          },
+          "widgetId": "widget_2",
+          "setting": {
+            "autoProps": {
+              "left": true,
+              "right": false,
+              "top": false,
+              "bottom": true
+            }
+          }
+        }
+      },
+      "order": [
+        "0",
+        "1"
+      ]
+    },
+    "layout_1": {
+      "type": "FIXED",
+      "label": "Default",
+      "order": [
+        "1",
+        "2",
+        "3"
+      ],
+      "content": {
+        "1": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "0.0%",
+            "right": "68.8%",
+            "top": "0.00%",
+            "bottom": "40.8%",
+            "width": "30.00%",
+            "height": "100.00%"
+          },
+          "widgetId": "widget_4",
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": true,
+              "top": false,
+              "bottom": true
+            }
+          }
+        },
+        "2": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "30.0%",
+            "right": "-0.0%",
+            "top": "0.00%",
+            "bottom": "93.6%",
+            "width": "70.00%",
+            "height": "5.00%"
+          },
+          "widgetId": "widget_8",
+          "setting": {
+            "autoProps": {
+              "left": true,
+              "right": false,
+              "top": false,
+              "bottom": true
+            },
+            "vCenter": false,
+            "hCenter": false
+          },
+          "isPending": false
+        },
+        "3": {
+          "type": "SECTION",
+          "setting": {
+            "style": {},
+            "autoProps": {
+              "left": true,
+              "right": false,
+              "top": false,
+              "bottom": true
+            }
+          },
+          "bbox": {
+            "left": "29.9%",
+            "right": "-0.0%",
+            "top": "6.00%",
+            "bottom": "0.0%",
+            "width": "69.00%",
+            "height": "100.00%"
+          },
+          "sectionId": "section_1"
+        }
+      }
+    },
+    "layout_2": {
+      "type": "FIXED",
+      "label": "Default",
+      "order": [
+        "0",
+        "1"
+      ],
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "3.3%",
+            "right": "76.7%",
+            "top": "0.0%",
+            "bottom": "21.9%",
+            "width": "20.0%",
+            "height": "78.1%"
+          },
+          "widgetId": "widget_6",
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": true,
+              "top": false,
+              "bottom": true,
+              "height": "CUSTOM"
+            },
+            "vCenter": false,
+            "hCenter": false
+          },
+          "isPending": false
+        },
+        "1": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "31.3%",
+            "right": "32.9%",
+            "top": "19.9%",
+            "bottom": "20.4%",
+            "width": "35.8%",
+            "height": "59.7%"
+          },
+          "widgetId": "widget_7",
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": true,
+              "top": false,
+              "bottom": true
+            },
+            "vCenter": false,
+            "hCenter": false
+          },
+          "isPending": false
+        }
+      }
+    },
+    "layout_3": {
+      "type": "FIXED",
+      "label": "Map FixedLayout",
+      "order": [],
+      "content": {}
+    },
+    "layout_4": {
+      "type": "FIXED",
+      "label": "Default",
+      "order": [
+        "0"
+      ],
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "0.00%",
+            "right": "37.2%",
+            "top": "2.00%",
+            "bottom": "54.9%",
+            "width": "100.00%",
+            "height": "100.00%"
+          },
+          "widgetId": "widget_5",
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": true,
+              "top": false,
+              "bottom": true
+            },
+            "lockParent": true
+          }
+        }
+      }
+    },
+    "layout_5": {
+      "type": "FIXED",
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "setting": {
+            "style": {},
+            "autoProps": {
+              "right": false,
+              "left": true,
+              "top": true,
+              "bottom": false
+            }
+          },
+          "bbox": {
+            "left": "15.9%",
+            "right": "0.0%",
+            "top": "13.8%",
+            "bottom": "0.0%",
+            "width": "100.00%",
+            "height": "100.00%"
+          },
+          "widgetId": "widget_3"
+        }
+      },
+      "order": [
+        "0"
+      ]
+    },
+    "layout_6": {
+      "type": "FIXED",
+      "order": [
+        "0"
+      ],
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "0.00%",
+            "right": "8.5%",
+            "top": "0.00%",
+            "bottom": "11.5%",
+            "width": "100.00%",
+            "height": "96.00%"
+          },
+          "widgetId": "widget_9",
+          "setting": {
+            "autoProps": {
+              "right": true,
+              "left": false,
+              "top": false,
+              "bottom": true
+            },
+            "vCenter": false,
+            "hCenter": false,
+            "lockParent": true
+          },
+          "isPending": false
+        }
+      }
+    }
+  },
+  "exbVersion": "1.10.0",
+  "mainSizeMode": "LARGE",
+  "theme": "themes/default/",
+  "forBuilderAttributes": {
+    "lockLayout": false
+  },
+  "template": "blankfullscreen",
+  "widgets": {
+    "widget_1": {
+      "uri": "widgets/layout/fixed/",
+      "version": "1.10.0",
+      "label": "Fixed Panel",
+      "config": null,
+      "id": "widget_1",
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_1"
+        }
+      }
+    },
+    "widget_2": {
+      "uri": "widgets/layout/fixed/",
+      "version": "1.10.0",
+      "label": "Fixed Panel 2",
+      "id": "widget_2",
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_2"
+        }
+      },
+      "style": {
+        "background": {
+          "color": "var(--primary)",
+          "fillType": "fill"
+        }
+      }
+    },
+    "widget_3": {
+      "uri": "widgets/arcgis/arcgis-map/",
+      "version": "1.10.0",
+      "label": "Map",
+      "config": {
+        "toolConfig": {
+          "canZoom": true,
+          "canHome": true,
+          "canSearch": true,
+          "canNavigation": true,
+          "canLayers": true,
+          "canBaseMap": true,
+          "canScaleBar": false,
+          "canMeasure": true
+        },
+        "isUseCustomMapState": false
+      },
+      "id": "widget_3",
+      "layouts": {
+        "MapFixedLayout": {
+          "LARGE": "layout_3"
+        }
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1",
+          "mainDataSourceId": "dataSource_1"
+        }
+      ]
+    },
+    "widget_4": {
+      "uri": "widgets/layout/fixed/",
+      "version": "1.10.0",
+      "label": "Fixed Panel 3",
+      "id": "widget_4",
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_4"
+        }
+      },
+      "style": {
+        "background": {
+          "color": "var(--light)",
+          "fillType": "fill"
+        },
+        "borderRadius": null,
+        "border": {
+          "color": "var(--light)",
+          "type": "solid",
+          "width": "3px"
+        }
+      }
+    },
+    "widget_5": {
+      "uri": "widgets/scoring-measures/",
+      "version": "1.9.0",
+      "config": {},
+      "id": "widget_5",
+      "useMapWidgetIds": [
+        "widget_3"
+      ],
+      "style": {
+        "background": {
+          "color": "var(--light)",
+          "fillType": "fill"
+        }
+      }
+    },
+    "widget_6": {
+      "uri": "widgets/common/image/",
+      "version": "1.10.0",
+      "label": "Image",
+      "config": {
+        "functionConfig": {
+          "altText": "",
+          "toolTip": "",
+          "linkParam": {},
+          "scale": "Fit",
+          "imageParam": {
+            "url": "${appResourceUrl}/images/widget_6/1688050608776.png",
+            "originalUrl": "${appResourceUrl}/images/widget_6/1688050608776.png",
+            "fileName": "1688050608776.png",
+            "originalName": "1674512360129.png",
+            "imgSourceType": "BY_UPLOAD",
+            "fileFormat": "image/png",
+            "originalId": "1688050608776",
+            "isUseCompress": false,
+            "originalWidth": 800,
+            "originalHeight": 417,
+            "cropParam": {}
+          },
+          "imageDisplayQualityMode": "ORIGINAL",
+          "imgSourceType": "",
+          "srcExpression": null,
+          "isCropped": true,
+          "imageFillMode": "FIT"
+        },
+        "styleConfig": {}
+      },
+      "id": "widget_6",
+      "useDataSourcesEnabled": false
+    },
+    "widget_7": {
+      "uri": "widgets/common/text/",
+      "version": "1.10.0",
+      "label": "Text",
+      "config": {
+        "text": "<p><strong style=\"color: rgb(247, 148, 29); font-size: 30px;\">SUN CLOUD SCORING ENGINE</strong></p>",
+        "placeholder": "Double click to edit text",
+        "style": {
+          "verticalAlign": "start",
+          "wrap": true
+        }
+      },
+      "id": "widget_7"
+    },
+    "widget_8": {
+      "uri": "widgets/common/navigator/",
+      "version": "1.10.0",
+      "label": "Views Navigation",
+      "config": {
+        "data": {
+          "type": "AUTO",
+          "section": "section_1",
+          "views": [
+            "view_1",
+            "view_2"
+          ]
+        },
+        "display": {
+          "type": "nav",
+          "navStyle": "pills",
+          "standard": {
+            "gap": "0px",
+            "scrollable": true,
+            "showIcon": false,
+            "showText": true,
+            "iconPosition": "start",
+            "textAlign": "center"
+          },
+          "vertical": false,
+          "advanced": true,
+          "variant": {
+            "size": {
+              "fontSize": "0.875rem",
+              "lineHeight": 1.5,
+              "paddingX": "1rem",
+              "paddingY": "0.25rem"
+            },
+            "gutter": "0.25rem",
+            "icon": {
+              "spacing": "0.5rem"
+            },
+            "root": {
+              "borderRadius": "50rem"
+            },
+            "item": {
+              "default": {
+                "color": "#181818",
+                "border": {
+                  "width": "0px"
+                },
+                "borderRadius": "0px",
+                "icon": {
+                  "size": "8px"
+                },
+                "size": "14px",
+                "bg": "var(--secondary)",
+                "bold": true
+              },
+              "hover": {
+                "color": "#1a305d",
+                "borderRadius": "0px",
+                "icon": {
+                  "color": "var(--primary)",
+                  "size": "8px"
+                },
+                "size": "14px"
+              },
+              "active": {
+                "color": "#fff",
+                "bg": "#f7941d",
+                "borderRadius": "0px",
+                "icon": {
+                  "color": "var(--primary)",
+                  "size": "8px"
+                },
+                "size": "14px",
+                "bold": true
+              },
+              "disabled": {
+                "color": "#989898",
+                "shadow": "none",
+                "borderRadius": "50rem"
+              }
+            }
+          }
+        }
+      },
+      "id": "widget_8"
+    },
+    "widget_9": {
+      "uri": "widgets/common/table/",
+      "version": "1.10.0",
+      "label": "Table",
+      "config": {
+        "layersConfig": [
+          {
+            "id": "dataSource_1-1879b5d4471-layer-37-1",
+            "name": "Sun Cloud Performance Scores",
+            "useDataSource": {
+              "dataSourceId": "dataSource_1-1879b5d4471-layer-37",
+              "mainDataSourceId": "dataSource_1-1879b5d4471-layer-37",
+              "rootDataSourceId": "dataSource_1",
+              "fields": [
+                "route_id",
+                "injury_rate",
+                "non_motorized_injuries",
+                "excess_expected_crashes",
+                "pavement_pct_poor",
+                "bridge_structural_rating",
+                "bridge_deck_geometry",
+                "lottr",
+                "avg_delay",
+                "vc_ratio",
+                "vmt_change",
+                "transit_overlap",
+                "transit_ridership",
+                "employment_change",
+                "critical_freight",
+                "households_no_broadband",
+                "percent_disadvantaged",
+                "composite_score_safety",
+                "composite_score_assets",
+                "composite_score_mobility",
+                "composite_score_economy",
+                "composite_score_unweighted",
+                "composite_score",
+                "Shape__Length"
+              ]
+            },
+            "allFields": [
+              {
+                "jimuName": "OBJECTID",
+                "name": "OBJECTID",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeOID",
+                "alias": "OBJECTID",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                }
+              },
+              {
+                "jimuName": "route_id",
+                "name": "route_id",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "Route ID",
+                "format": null
+              },
+              {
+                "jimuName": "injury_rate",
+                "name": "injury_rate",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Serious and Fatal Injuries per million VMT",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                }
+              },
+              {
+                "jimuName": "non_motorized_injuries",
+                "name": "non_motorized_injuries",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Bicyclist and Pedestrian Serious and Fatal Injuries",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                }
+              },
+              {
+                "jimuName": "excess_expected_crashes",
+                "name": "excess_expected_crashes",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Excess Expected Severe Crashes",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                }
+              },
+              {
+                "jimuName": "pavement_pct_poor",
+                "name": "pavement_pct_poor",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Pavement Percent Poor Condition",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                }
+              },
+              {
+                "jimuName": "bridge_structural_rating",
+                "name": "bridge_structural_rating",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Bridge Structural Evaluation Rating",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                }
+              },
+              {
+                "jimuName": "bridge_deck_geometry",
+                "name": "bridge_deck_geometry",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Bridge Deck Geometry",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                }
+              },
+              {
+                "jimuName": "lottr",
+                "name": "lottr",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Level of Travel Time Reliability",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 3
+                }
+              },
+              {
+                "jimuName": "avg_delay",
+                "name": "avg_delay",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Daily Delay",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                }
+              },
+              {
+                "jimuName": "vc_ratio",
+                "name": "vc_ratio",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Volume / Capacity Ratio",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                }
+              },
+              {
+                "jimuName": "vmt_change",
+                "name": "vmt_change",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Vehicle Miles Traveled Forecasted Change",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                }
+              },
+              {
+                "jimuName": "transit_overlap",
+                "name": "transit_overlap",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Overlap with Transit Route",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                }
+              },
+              {
+                "jimuName": "transit_ridership",
+                "name": "transit_ridership",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Transit Ridership",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                }
+              },
+              {
+                "jimuName": "employment_change",
+                "name": "employment_change",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Employment Forecasted Change",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                }
+              },
+              {
+                "jimuName": "critical_freight",
+                "name": "critical_freight",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Overlap with Critical Freight Route",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                }
+              },
+              {
+                "jimuName": "households_no_broadband",
+                "name": "households_no_broadband",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Households Without Broadband",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                }
+              },
+              {
+                "jimuName": "percent_disadvantaged",
+                "name": "percent_disadvantaged",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Percent Disadvantaged Facility Users",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                }
+              },
+              {
+                "jimuName": "injury_rate_norm",
+                "name": "injury_rate_norm",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Severe Injury Rate (Norm.)",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                }
+              },
+              {
+                "jimuName": "non_motorized_injuries_norm",
+                "name": "non_motorized_injuries_norm",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Non-Motorized Severe Injuries (Norm.)",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                }
+              },
+              {
+                "jimuName": "excess_expected_crashes_norm",
+                "name": "excess_expected_crashes_norm",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Excess Expected Severe Crashes (Norm.)",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                }
+              },
+              {
+                "jimuName": "pavement_pct_poor_norm",
+                "name": "pavement_pct_poor_norm",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Pavement Percent Poor (Norm.)",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                }
+              },
+              {
+                "jimuName": "bridge_structural_rating_norm",
+                "name": "bridge_structural_rating_norm",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Bridge Rating (Norm.)",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                }
+              },
+              {
+                "jimuName": "bridge_deck_geometry_norm",
+                "name": "bridge_deck_geometry_norm",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Bridge Deck Geometry (Norm.)",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                }
+              },
+              {
+                "jimuName": "lottr_norm",
+                "name": "lottr_norm",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Travel Time Reliability (Norm.)",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                }
+              },
+              {
+                "jimuName": "avg_delay_norm",
+                "name": "avg_delay_norm",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Daily Delay (Norm.)",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                }
+              },
+              {
+                "jimuName": "vc_ratio_norm",
+                "name": "vc_ratio_norm",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Volume / Capacity Ratio (Norm.)",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                }
+              },
+              {
+                "jimuName": "vmt_change_norm",
+                "name": "vmt_change_norm",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "VMT Forecasted Change (Norm.)",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                }
+              },
+              {
+                "jimuName": "transit_overlap_norm",
+                "name": "transit_overlap_norm",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Transit Route Overlap (Norm.)",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                }
+              },
+              {
+                "jimuName": "transit_ridership_norm",
+                "name": "transit_ridership_norm",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Transit Ridership (Norm.)",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                }
+              },
+              {
+                "jimuName": "employment_change_norm",
+                "name": "employment_change_norm",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Employment Change (Norm.)",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                }
+              },
+              {
+                "jimuName": "critical_freight_norm",
+                "name": "critical_freight_norm",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Freight Route Overlap (Norm.)",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                }
+              },
+              {
+                "jimuName": "households_no_broadband_norm",
+                "name": "households_no_broadband_norm",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Households No Broadband (Norm.)",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                }
+              },
+              {
+                "jimuName": "composite_score_safety",
+                "name": "composite_score_safety",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Safety Composite Score",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                }
+              },
+              {
+                "jimuName": "composite_score_assets",
+                "name": "composite_score_assets",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Assets Composite Score",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                }
+              },
+              {
+                "jimuName": "composite_score_mobility",
+                "name": "composite_score_mobility",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Mobility Composite Score",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                }
+              },
+              {
+                "jimuName": "composite_score_economy",
+                "name": "composite_score_economy",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Economy Composite Score",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                }
+              },
+              {
+                "jimuName": "composite_score_unweighted",
+                "name": "composite_score_unweighted",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Unweighted Composite Score",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                }
+              },
+              {
+                "jimuName": "composite_score",
+                "name": "composite_score",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Composite Score",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                }
+              },
+              {
+                "jimuName": "Shape__Length",
+                "name": "Shape__Length",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Shape Length (feet)",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                }
+              }
+            ],
+            "tableFields": [
+              {
+                "jimuName": "route_id",
+                "name": "route_id",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "Route ID",
+                "format": null,
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "injury_rate",
+                "name": "injury_rate",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Serious and Fatal Injuries per million VMT",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "non_motorized_injuries",
+                "name": "non_motorized_injuries",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Bicyclist and Pedestrian Serious and Fatal Injuries",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "excess_expected_crashes",
+                "name": "excess_expected_crashes",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Excess Expected Severe Crashes",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "pavement_pct_poor",
+                "name": "pavement_pct_poor",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Pavement Percent Poor Condition",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "bridge_structural_rating",
+                "name": "bridge_structural_rating",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Bridge Structural Evaluation Rating",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "bridge_deck_geometry",
+                "name": "bridge_deck_geometry",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Bridge Deck Geometry",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "lottr",
+                "name": "lottr",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Level of Travel Time Reliability",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 3
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "avg_delay",
+                "name": "avg_delay",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Daily Delay",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "vc_ratio",
+                "name": "vc_ratio",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Volume / Capacity Ratio",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "vmt_change",
+                "name": "vmt_change",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Vehicle Miles Traveled Forecasted Change",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "transit_overlap",
+                "name": "transit_overlap",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Overlap with Transit Route",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "transit_ridership",
+                "name": "transit_ridership",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Transit Ridership",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "employment_change",
+                "name": "employment_change",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Employment Forecasted Change",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "critical_freight",
+                "name": "critical_freight",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Overlap with Critical Freight Route",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "households_no_broadband",
+                "name": "households_no_broadband",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Households Without Broadband",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "percent_disadvantaged",
+                "name": "percent_disadvantaged",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Percent Disadvantaged Facility Users",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "composite_score_safety",
+                "name": "composite_score_safety",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Safety Composite Score",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "composite_score_assets",
+                "name": "composite_score_assets",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Assets Composite Score",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "composite_score_mobility",
+                "name": "composite_score_mobility",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Mobility Composite Score",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "composite_score_economy",
+                "name": "composite_score_economy",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Economy Composite Score",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "composite_score_unweighted",
+                "name": "composite_score_unweighted",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Unweighted Composite Score",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "composite_score",
+                "name": "composite_score",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Composite Score",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 2
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "Shape__Length",
+                "name": "Shape__Length",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Shape Length (feet)",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                },
+                "editAuthority": false,
+                "editable": false,
+                "visible": true
+              }
+            ],
+            "enableAttachements": false,
+            "enableEdit": false,
+            "allowCsv": false,
+            "enableSearch": false,
+            "searchFields": "",
+            "enableRefresh": true,
+            "enableSelect": true,
+            "selectMode": "SINGLE"
+          }
+        ],
+        "arrangeType": "TABS"
+      },
+      "id": "widget_9",
+      "dataActions": {
+        "showOnMap": {
+          "config": {
+            "isUseCustomSymbol": true,
+            "symbolOption": {
+              "pointSymbol": {
+                "type": "esriSMS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "angle": 0,
+                "xoffset": 0,
+                "yoffset": 0,
+                "size": 12,
+                "style": "esriSMSCircle",
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                }
+              },
+              "polylineSymbol": {
+                "type": "esriSLS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "width": 0.75,
+                "style": "esriSLSSolid"
+              },
+              "polygonSymbol": {
+                "type": "esriSFS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                },
+                "style": "esriSFSSolid"
+              }
+            }
+          }
+        },
+        "panTo": {
+          "enabled": true
+        }
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1-1879b5d4471-layer-37",
+          "mainDataSourceId": "dataSource_1-1879b5d4471-layer-37",
+          "rootDataSourceId": "dataSource_1",
+          "fields": [
+            "route_id",
+            "injury_rate",
+            "non_motorized_injuries",
+            "excess_expected_crashes",
+            "pavement_pct_poor",
+            "bridge_structural_rating",
+            "bridge_deck_geometry",
+            "lottr",
+            "avg_delay",
+            "vc_ratio",
+            "vmt_change",
+            "transit_overlap",
+            "transit_ridership",
+            "employment_change",
+            "critical_freight",
+            "households_no_broadband",
+            "percent_disadvantaged",
+            "composite_score_safety",
+            "composite_score_assets",
+            "composite_score_mobility",
+            "composite_score_economy",
+            "composite_score_unweighted",
+            "composite_score",
+            "Shape__Length"
+          ]
+        }
+      ]
+    }
+  },
+  "widgetsManifest": {},
+  "views": {
+    "view_1": {
+      "id": "view_1",
+      "label": "Map",
+      "layout": {
+        "LARGE": "layout_5"
+      }
+    },
+    "view_2": {
+      "id": "view_2",
+      "label": "Table",
+      "layout": {
+        "LARGE": "layout_6"
+      }
+    }
+  },
+  "sections": {
+    "section_1": {
+      "id": "section_1",
+      "label": "Section",
+      "views": [
+        "view_1",
+        "view_2"
+      ]
+    }
+  },
+  "dialogs": {},
+  "dataSources": {
+    "dataSource_1": {
+      "id": "dataSource_1",
+      "type": "WEB_MAP",
+      "sourceLabel": "Sun Cloud Map for Scoring Engine ExB",
+      "itemId": "772f708dd13142ae84af5c2efbc3d67a",
+      "portalUrl": "https://azgeo.maps.arcgis.com"
+    }
+  },
+  "messageConfigs": {},
+  "attributes": {
+    "portalUrl": "https://azgeo.maps.arcgis.com"
+  },
+  "sharedThemeVariables": {
+    "header": {},
+    "body": {},
+    "button": {},
+    "logo": {
+      "small": null,
+      "link": null
+    }
+  },
+  "originExbVersion": "1.10.0",
+  "pageStructure": [
+    {
+      "page_0": []
+    }
+  ],
+  "timestamp": 1688053124269,
+  "customTheme": {
+    "colors": {
+      "primary": "#1a305d"
+    }
+  }
+}

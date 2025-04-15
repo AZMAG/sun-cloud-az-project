@@ -1,0 +1,30 @@
+{
+  "created": 1676921224848,
+  "description": "",
+  "id": "exb_apps_mag_suncloud",
+  "modified": 1688078437849,
+  "owner": "ahicks_azgeo",
+  "tags": [],
+  "thumbnail": "thumbnail/thumbnail1676921224981.png",
+  "title": "Sun Cloud Explorer",
+  "type": "Web Experience",
+  "snippet": "",
+  "typeKeywords": [
+    "EXB Experience",
+    "JavaScript",
+    "publishVersion:1.11.0",
+    "Ready To Use",
+    "status: Published",
+    "version:1.11.0",
+    "Web Application",
+    "Web Experience",
+    "Web Mapping Application",
+    "Web Page",
+    "Web Site"
+  ],
+  "portalUrl": "https://azgeo.maps.arcgis.com",
+  "username": "ahicks_azgeo",
+  "f": "json",
+  "token": "undefined",
+  "url": null
+}

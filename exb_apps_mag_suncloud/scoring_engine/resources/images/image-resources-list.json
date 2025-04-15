@@ -1,0 +1,27 @@
+{
+  "1688050608776": {
+    "originalName": "1674512360129.png",
+    "fileName": "1688050608776.png",
+    "size": 109395,
+    "url": "${appResourceUrl}/images/widget_6/1688050608776.png",
+    "created": 1688050608776,
+    "resourcesPrefix": "images/widget_6",
+    "referedIds": [
+      "1688050704308"
+    ],
+    "originId": "1688050608776",
+    "fileFormat": "image/png",
+    "isUseCompress": false,
+    "originalWidth": 800,
+    "originalHeight": 417
+  },
+  "1688050704308": {
+    "file": {},
+    "fileName": "1688050704308.jpeg",
+    "url": "${appResourceUrl}/images/templates/1688050704308.jpeg",
+    "referedIds": [],
+    "fileFormat": "image/jpeg",
+    "originId": "1688050608776",
+    "resourcesPrefix": "images/templates"
+  }
+}

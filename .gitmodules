@@ -1,0 +1,3 @@
+[submodule "apps/exb_widgets_mag_suncloud"]
+	path = apps/exb_widgets_mag_suncloud
+	url = git@bitbucket.org:high-street/exb_widgets_mag_suncloud.git
