@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+    <idinfo>
+        <citation>
+            <citeinfo>
+                <title>AADT's 2020</title>
+                <onlink>https://services6.arcgis.com/clPWQMwZfdWn4MQZ/arcgis/rest/services/AADT_2020_gdb/FeatureServer</onlink>
+            </citeinfo>
+        </citation>
+        <descript>
+            <abstract>Annual Average Daily Traffic (AADT) is the average daily value that represents all days of reporting year, it is meant to represent traffic on a typical day of the year. The total volume of vehicle traffic of a highway or road for a year divided by 365 days.</abstract>
+            <purpose>This is a geodatabase containing the different types of AADT features submitted for HPMS. Generally, Annual Average Daily Traffic (AADT) is the average daily value that represents all days of reporting year, it is meant to represent traffic on a typical day of the year. The total volume of vehicle traffic of a highway or road for a year divided by 365 days. Single Unit AADT is for vehicles classified as trucks, Combination AADT is for vehicles classified as heavy trucks.</purpose>
+        </descript>
+        <keywords>
+            <theme>
+                <themekt>None</themekt>
+                <themekey>AADT</themekey>
+                <themekey>Single Unit</themekey>
+                <themekey>Combination</themekey>
+                <themekey>Traffic</themekey>
+                <themekey>Volume</themekey>
+                <themekey>Traffic Volume</themekey>
+                <themekey>AADT Single Unit</themekey>
+                <themekey>AADT Combination</themekey>
+                <themekey>Traffic Volumes</themekey>
+                <themekey>Geodatabase</themekey>
+            </theme>
+        </keywords>
+        <accconst>Other Constraints</accconst>
+        <useconst>Although the Arizona Department of Transportation’s data in these dashboards has been produced and processed from sources believed to be reliable, no warranty expressed or implied is made regarding accuracy, adequacy, completeness, legality, reliability, or usefulness of any information. This disclaimer applies to both isolated and aggregate uses of the information. The Arizona Department of Transportation provides this information on an &amp;quot;AS IS&amp;quot; basis. All warranties of any kind, express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, freedom from contamination by computer viruses, and non-infringement of proprietary rights are disclaimed. Changes may be periodically added to the information herein; these changes may or may not be incorporated in any new version of the publication. If the user has obtained information from this dashboard from a source other than this dashboard, the user must be aware that electronic data can be altered subsequent to original distribution. Data can also quickly become out of date. It is recommended that the user pay careful attention to the contents of any metadata associated with a file and that the originator (MPD GIS) of the data or information be contacted with any questions regarding appropriate use.   If the user finds any errors or omissions, we encourage the user to report them to the Arizona Department of Transportation GIS team at MPDGIS@azdot.gov. To the maximum extent permitted by law, the liability of ADOT, its employees, officers, officials, and agents shall not include liability for lost profits, indirect, incidental, special, punitive, or consequential damages, or claims from third parties to the public, or any loss of business, revenue or data, whether based upon a claim or action of tort, contract, warranty, negligence, strict liability, breach of statutory duty, or any other legal theory or cause of action, even if advised of the possibility of such damages. In addition to the disclaimers above, to the fullest extent permitted by law, any user of this dashboard agrees to release, and hold harmless the State of Arizona, its employees, officers, officials, and agents from and against any and all claims, actions, liabilities, damages, losses, or expenses (including court costs, attorneys’ fees, and costs of claim processing, investigation, and litigation) arising out of the performance of this agreement. </useconst>
+    </idinfo>
+    <metainfo>
+        <metd>20211104</metd>
+        <metfrd>20221003</metfrd>
+        <metc>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>Arizona Department of Transportation</cntorg>
+                    <cntper>Sage Donaldson</cntper>
+                </cntorgp>
+                <cntpos>Data Analytics and HPMS Manager</cntpos>
+                <cntemail>mpdgis@azdot.gov</cntemail>
+            </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+        <mettc>local time</mettc>
+    </metainfo>
+</metadata>
